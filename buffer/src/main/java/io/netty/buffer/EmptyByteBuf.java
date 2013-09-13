@@ -33,7 +33,8 @@ import java.nio.charset.Charset;
  */
 public final class EmptyByteBuf extends ByteBuf {
 
-    private static final ByteBuffer EMPTY_BYTE_BUFFER = ByteBuffer.allocateDirect(0);
+    //private static final ByteBuffer EMPTY_BYTE_BUFFER = ByteBuffer.allocateDirect(0);
+    private static final ByteBuffer EMPTY_BYTE_BUFFER = ByteBuffer.allocate(0);
     private static final long EMPTY_BYTE_BUFFER_ADDRESS;
 
     static {
