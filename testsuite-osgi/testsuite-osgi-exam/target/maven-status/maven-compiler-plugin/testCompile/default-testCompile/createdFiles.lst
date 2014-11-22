@@ -1,0 +1,3 @@
+io/netty/verify/osgi/NioUdtMessageRendezvousChannelIT.class
+io/netty/verify/osgi/UnitHelp.class
+io/netty/verify/osgi/BasicFrameworkIT.class

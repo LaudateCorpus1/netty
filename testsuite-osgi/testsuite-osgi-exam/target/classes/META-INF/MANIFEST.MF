@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1380125880952
+Build-Jdk: 1.7.0_05
+Built-By: greg
+Bundle-Description: verify osgi compliance: run tests inside osgi framew
+ ork
+Bundle-DocURL: http://netty.io/
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Netty/Testsuite/OSGi/Exam
+Bundle-SymbolicName: io.netty.testsuite-osgi-exam
+Bundle-Vendor: The Netty Project
+Bundle-Version: 4.0.8.Final
+Created-By: Apache Maven Bundle Plugin
+Export-Package: io.netty.verify.osgi;uses:="org.slf4j";version="4.0.8.Fi
+ nal"
+Import-Package: org.slf4j;version="[1.7,2)"
+Service-Component: OSGI-INF/service-component/*.xml
+Tool: Bnd-1.50.0

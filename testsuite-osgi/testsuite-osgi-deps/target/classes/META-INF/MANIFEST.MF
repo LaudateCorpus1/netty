@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1380125877071
+Build-Jdk: 1.7.0_05
+Built-By: greg
+Bundle-Description: verify osgi compliance: all transitive dependencies 
+ must be osgi bundles
+Bundle-DocURL: http://netty.io/
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Netty/Testsuite/OSGi/Deps
+Bundle-SymbolicName: io.netty.testsuite-osgi-deps
+Bundle-Vendor: The Netty Project
+Bundle-Version: 4.0.8.Final
+Created-By: Apache Maven Bundle Plugin
+Export-Package: io.netty.verify.osgi;version="4.0.8.Final"
+Tool: Bnd-1.50.0

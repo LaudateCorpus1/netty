@@ -1243,12 +1243,18 @@ public class SslHandler extends ByteToMessageDecoder implements ChannelOutboundH
             @Override
             public void operationComplete(ChannelFuture f)
                     throws Exception {
+                // If the channel has already been closed, then the promise has already been fulfilled
+                // Similarly, if the timeout future is unable to be cancelled, it must have already run.
+                // In either of those cases, we don't want to double-close the channel
+                boolean safeToClose = !promise.isDone();
                 if (timeoutFuture != null) {
-                    timeoutFuture.cancel(false);
+                    safeToClose = timeoutFuture.cancel(false) && safeToClose;
                 }
                 // Trigger the close in all cases to make sure the promise is notified
                 // See https://github.com/netty/netty/issues/2358
-                ctx.close(promise);
+                if (true || safeToClose) {
+                    ctx.close(promise);
+                }
             }
         });
     }

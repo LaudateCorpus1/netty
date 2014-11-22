@@ -1,0 +1,8 @@
+<container xmlns="http://www.osgi.org/xmlns/scr/v1.1.0">
+  <component name="io.netty.verify.osgi.NettyServiceProvider" activate="activate" deactivate="deactivate">
+    <implementation class="io.netty.verify.osgi.NettyServiceProvider"/>
+    <service>
+      <provide interface="io.netty.verify.osgi.NettyService"/>
+    </service>
+  </component>
+</container>

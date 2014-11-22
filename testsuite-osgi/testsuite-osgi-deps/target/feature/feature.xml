@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.2.0" name="netty-testsuite-osgi-deps">
+    <feature name="netty-testsuite-osgi-deps" version="4.0.8.Final" description="Netty/Testsuite/OSGi/Deps">
+        <details>verify osgi compliance: all transitive dependencies must be osgi bundles</details>
+        <bundle>mvn:io.netty/netty-buffer/4.0.8.Final</bundle>
+        <bundle>mvn:io.netty/netty-common/4.0.8.Final</bundle>
+        <bundle>mvn:io.netty/netty-codec/4.0.8.Final</bundle>
+        <bundle>mvn:io.netty/netty-transport/4.0.8.Final</bundle>
+        <bundle>mvn:io.netty/netty-codec-http/4.0.8.Final</bundle>
+        <bundle>mvn:io.netty/netty-handler/4.0.8.Final</bundle>
+        <bundle>mvn:io.netty/netty-codec-socks/4.0.8.Final</bundle>
+        <bundle>mvn:io.netty/netty-transport-sctp/4.0.8.Final</bundle>
+        <bundle>mvn:io.netty/netty-transport-udt/4.0.8.Final</bundle>
+        <bundle>mvn:com.barchart.udt/barchart-udt-bundle/2.3.0</bundle>
+    </feature>
+</features>

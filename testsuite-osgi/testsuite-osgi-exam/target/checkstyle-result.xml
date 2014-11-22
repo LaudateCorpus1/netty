@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.6">
+<file name="/Users/greg/workspace/netty/testsuite-osgi/testsuite-osgi-exam/src/main/java/io/netty/verify/osgi/NettyService.java">
+</file>
+<file name="/Users/greg/workspace/netty/testsuite-osgi/testsuite-osgi-exam/src/main/java/io/netty/verify/osgi/NettyServiceProvider.java">
+</file>
+<file name="/Users/greg/workspace/netty/testsuite-osgi/testsuite-osgi-exam/src/main/java/io/netty/verify/osgi/package-info.java">
+</file>
+<file name="/Users/greg/workspace/netty/testsuite-osgi/testsuite-osgi-exam/src/test/java/io/netty/verify/osgi/BasicFrameworkIT.java">
+</file>
+<file name="/Users/greg/workspace/netty/testsuite-osgi/testsuite-osgi-exam/src/test/java/io/netty/verify/osgi/NioUdtMessageRendezvousChannelIT.java">
+</file>
+<file name="/Users/greg/workspace/netty/testsuite-osgi/testsuite-osgi-exam/src/test/java/io/netty/verify/osgi/UnitHelp.java">
+</file>
+</checkstyle>
