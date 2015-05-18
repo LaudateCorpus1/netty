@@ -16,6 +16,7 @@
 package io.netty.handler.codec.http;
 
 import static io.netty.handler.codec.http.HttpHeaders.is100ContinueExpected;
+import static io.netty.handler.codec.http.HttpHeaders.isContentLengthSet;
 import static io.netty.handler.codec.http.HttpHeaders.removeTransferEncodingChunked;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.CompositeByteBuf;
@@ -209,7 +210,7 @@ public class HttpObjectAggregator extends MessageToMessageDecoder<HttpObject> {
                 // See rfc2616 14.13 Content-Length
                 if (!isContentLengthSet(currentMessage)) {
                     currentMessage.headers().set(
-                            Names.CONTENT_LENGTH,
+                            HttpHeaders.Names.CONTENT_LENGTH,
                             String.valueOf(content.readableBytes()));
                 }
                 // All done
